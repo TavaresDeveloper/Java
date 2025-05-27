@@ -44,15 +44,20 @@ public class InterfaceFuncional extends JFrame{
 
         @Override
         public void actionPerformed(ActionEvent evt) {
-            int n = Integer.parseInt(txtBase.getText());
-            int expoente = Integer.parseInt(txtExpoente.getText());
-            int resultado = 1;
-            for(int cont = 1; cont < expoente; cont++){
+            try {
+                int n = Integer.parseInt(txtBase.getText());
+                int expoente = Integer.parseInt(txtExpoente.getText());
+                int resultado = 1;
+                for (int cont = 1; cont < expoente; cont++) {
 
-                resultado *= n;
+                    resultado *= n;
 
+                }
+                JOptionPane.showMessageDialog(null, "Resultado =" + " " + resultado);
+            }catch (NumberFormatException e){
+
+                JOptionPane.showMessageDialog(null, "Caro usuário, largue mão de ser burro e digite um valor válido.");
             }
-            JOptionPane.showMessageDialog(null,"Resultado=" + resultado);
         }
 
     }
