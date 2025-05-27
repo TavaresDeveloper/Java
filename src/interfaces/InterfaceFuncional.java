@@ -48,7 +48,7 @@ public class InterfaceFuncional extends JFrame{
                 int n = Integer.parseInt(txtBase.getText());
                 int expoente = Integer.parseInt(txtExpoente.getText());
                 int resultado = 1;
-                for (int cont = 1; cont < expoente; cont++) {
+                for (int cont = 1; cont <= expoente; cont++) {
 
                     resultado *= n;
 
