@@ -56,7 +56,7 @@ public class InterfaceFuncional extends JFrame{
                 JOptionPane.showMessageDialog(null, "Resultado =" + " " + resultado);
             }catch (NumberFormatException e){
 
-                JOptionPane.showMessageDialog(null, "Caro usuário, por favor, digite um válido!");
+                JOptionPane.showMessageDialog(null, "Caro usuário, por favor, digite um valor válido!");
             }
         }
 
